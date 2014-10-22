@@ -1,0 +1,68 @@
+container{
+    width: 90%;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+@font-face {
+    font-family: franklincondensed;
+    src: url(fonts/franklincondensed.ttf);
+}
+
+@font-face {
+    font-family: franklin;
+    src: url(fonts/franklin.ttf);
+}
+
+
+h1{
+    font-family: franklincondensed;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    font-family: postroman;
+    font-style: italic;
+    font-size: 16px;
+}
+
+h3{
+    font-family: franklincondensed;
+    background: #dbe2e7;
+    margin: 0;
+    padding: 5px;
+}
+
+h3, th{
+    font-family: franklincondensed;
+}
+
+p{
+    font-family: franklin;
+    font-size: 16px;
+}
+
+#blurb1, #blurb2{
+    background: #bac7d3;
+    text-align: center;
+    padding: 0;
+    width: 33%;
+}
+
+#table_id{
+    background: #bac7d3;
+    font-family: franklin;
+}
+
+ul.nav.nav-tabs{
+    font-family: franklincondensed;
+    color: black;
+}
+
+ul.nav.nav-tabs a{
+    color: black;
+}
