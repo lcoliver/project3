@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Gender Equity in NC Div I Sports</title>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script src="chart.js"></script>
+    
+        
+    <!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.3/css/jquery.dataTables.css">
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="http://cdn.datatables.net/1.10.3/js/jquery.dataTables.js"></script>
+        
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap-theme.css" rel="stylesheet">
+    <script src="bootstrap.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+<div class="container">
+ <div class="row">
+        <div class="col-xs-12">    
+<h1>Title IX in North Carolina</h1>
+<h2>Title IX works to prevents sex discrimination in athletics that are federally funded. Schools have come a long way since Title IX's initial implementation, but is Title IX being upheld today? This data visualizes Athletic spending in North Carolina at NCAA Division I schools. These include Duke University, East Carolina University, North Carolina State University, The Univerity of North Carolina at Chapel Hill, and Wake Forest University. This data was collected from 2008 to 2012.</h2>
+        </div>
+ </div>
+<div class="row">
+        <div class="col-xs-12">
+            <div id="container4" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        </div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-6 col-lg-8">
+    <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+</div>
+
+<div class="col-xs-12 col-md-6 col-lg-4" id="blurb1">
+    <h3>Average NC Athletic Scholarship</h3>
+    <p>The average athletic student aid for men in 2012 was:</p>
+    <h4>$15,860.12</h4>
+    <p>The average for women was:</p>
+    <h4>$15,488.51</h4>
+</div>
+</div>
+
+<div class="row">
+<div class="col-xs-12 col-md-6 col-lg-4" id="blurb2">
+    <h3>Language of Title IX</h3>
+    <p style="padding:5px">"No person in the United States shall, on the basis of sex, be excluded from participation in, be denied the benefits of, or be subjected to discrimination under any education program or activity receiving federal financial assistance."</p>
+</div>
+    
+<div class="col-xs-12 col-md-6 col-lg-8">  
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#Expenses" role="tab" data-toggle="tab">Expenses</a></li>
+  <li><a href="#Aid" role="tab" data-toggle="tab">Financial Aid</a></li>
+  <li><a href="#Participants" role="tab" data-toggle="tab">Participants</a></li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="Expenses"><div id="container5" style="min-width: 310px; height: 400px; margin: 0 auto"></div></div>
+  <div class="tab-pane" id="Aid"><div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div></div>
+  <div class="tab-pane" id="Participants"><div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div></div>
+</div>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script>    
+</div> 
+</div>
+
+
+<div class="row">
+<div class="col-xs-12">
+<h3>Expenses in NC Division I Athletics</h3>
+<h2>This chart breaks down expenses by sport for each of the five schools in 2012. Expenses include things like equipment, training, travel, etc.</h2>
+<table id="table_id" class="display: order-column;">
+    <thead>
+        <tr>
+            <th>Sport</th>
+            <th>Duke University</th>
+            <th>ECU</th>
+            <th>NC State</th>
+            <th>UNC</th>
+            <th>Wake Forest</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Baseball (Male)</td>
+            <td>$1,747,289</td>
+            <td>$1,390,388</td>
+            <td>$1,684,028</td>
+            <td>$2,009,880</td>
+            <td>$1,589,961</td></tr>
+            <tr>
+            <td>Basketball (Male)</td>
+            <td>$15,170,813</td>
+            <td>$2,465,163</td>
+            <td>$7,144,610</td>
+            <td>$7,811,021</td>
+            <td>$5,247,106</td>
+            </tr>
+            <tr><td>Basketball (Female)</td>
+                <td>$4,811,565</td>
+                <td>$1,788,758</td>
+                <td>$2,781,154</td>
+                <td>$3,353,452</td>
+                <td>$2,660,003</td>
+                </tr>
+            <tr><td>All Track Combined (Male)</td>
+                <td>$1,103,300</td>
+                <td>$678,314</td>
+                <td>$1,646,118</td>
+                <td>$868,197</td>
+                <td>$874,318</td>
+            </tr>
+            <tr><td>All Track Combined (Female)</td>
+                <td>$1,644,524</td>
+                <td>$801,165</td>
+                <td>$1,219,653</td>
+                <td>$1,027,134</td>
+                <td>$1,194,870</td>
+            </tr>
+            <tr><td>Fencing (Male)</td>
+                <td>$301,836</td>
+                <td></td>
+                <td></td>
+                <td>$140,531</td>
+                <td></td>
+            </tr>
+            <tr><td>Fencing (Female)</td>
+                <td>$324,820</td>
+                <td></td>
+                <td></td>
+                <td>$131,827</td>
+                <td></td>
+            </tr>
+            <tr><td>Field Hockey (Female)</td>
+                <td>$1,103,214
+                <td></td>
+                <td></td>
+                <td>$956,424
+                <td>$1,069,337
+            </tr>
+            <tr><td>Football (Male)</td>
+                <td>$19,234,750</td>
+                <td>$9,915,950</td>
+                <td>$18,486,858</td>
+                <td>$15,912,188</td>
+                <td>$14,054,107</td>
+            </tr>
+            <tr><td>Golf (Male)</td>
+                <td>$663,046</td>
+                <td>$296,735</td>
+                <td>$579,743</td>
+                <td>$399,959</td>
+                <td>$630,705</td>
+            </tr>
+            <tr><td>Golf (Female)</td>
+                <td>$722,281</td>
+                <td>$403,308</td>
+                <td>$574,676</td>
+                <td>$442,872</td>
+                <td>$622,939</td>
+            </tr>
+            <tr><td>Gymnastics (Female)</td>
+                <td></td>
+                <td></td>
+                <td>$1,116,024</td>
+                <td>$671,874</td>
+                <td></td>
+            </tr>
+            <tr><td>Lacrosse (Male)</td>
+                <td>$1,958,569</td>
+                <td></td>
+                <td></td>
+                <td>$1,150,564</td>
+                <td></td>
+            </tr>
+            <tr><td>Lacrosse (Female)</td>
+                <td>$1,393,239</td>
+                <td></td>
+                <td></td>
+                <td>$912,326</td>
+                <td></td>
+            </tr>
+            <tr><td>Rifle (Coed)</td>
+                <td></td>
+                <td></td>
+                <td>$256,986</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr><td>Rowing (Female)</td>
+                <td>$1,671,950</td>
+                <td></td>
+                <td></td>
+                <td>$402,860</td>
+                <td></td>
+            </tr>
+            <tr><td>Soccer (Male)</td>
+                <td>$1,271,574</td>
+                <td></td>
+                <td>$1,039,474</td>
+                <td>$819,948</td>
+                <td>$1,132,469</td>
+            </tr>
+            <tr><td>Soccer (Female)</td>
+                <td>$1,475,270</td>
+                <td>$802,102</td>
+                <td>$1,083,288</td>
+                <td>$1,204,889</td>
+                <td>$1,264,498</td>
+            </tr>
+            <tr><td>Softball (Female)</td>
+                <td></td>
+                <td>$975,127</td>
+                <td>$1,098,940</td>
+                <td>$912,632</td>
+                <td></td>
+            </tr>
+            <tr><td>Swimming and Diving (Male)</td>
+                <td>$428,638</td>
+                <td>$624,134</td>
+                <td>$1,137,122</td>
+                <td>$687,301</td>
+                <td></td>
+            </tr>
+            <tr><td>Swimming and Diving (Female)</td>
+                <td>$504,757</td>
+                <td>$657,872</td>
+                <td>$645,253</td>
+                <td>$820,269</td>
+                <td></td>
+            </tr>
+            <tr><td>Tennis (Male)</td>
+                <td>$734,886</td>
+                <td>$323,540</td>
+                <td>$593,949</td>
+                <td>$448,534</td>
+                <td>$551,870</td>
+            </tr>
+            <tr><td>Tennis (Female)</td>
+                <td>$1,099,443</td>
+                <td>$409,188</td>
+                <td>$696,761</td>
+                <td>$641,424</td>
+                <td>$654,671</td>
+            </tr>
+            <tr><td>Volleyball (Female)</td>
+                <td>$1,444,763</td>
+                <td>$738,749</td>
+                <td>$1,219,972</td>
+                <td>$912,196</td>
+                <td>$1,067,270</td>
+            </tr>
+            <tr><td>Wrestling (Male)</td>
+                <td>$502,549</td>
+                <td></td>
+                <td>$824,514</td>
+                <td>$714,676</td>
+                <td></td>
+            </tr>
+        </tr>
+        
+    </tbody>
+</table>
+
+<script>$(document).ready( function () {
+    $('#table_id').DataTable();
+} );</script>
+</div> 
+</body>
+</html>
